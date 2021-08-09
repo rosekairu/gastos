@@ -1,0 +1,90 @@
+.legend > li {
+  font-size: 14px;
+  padding: 5px;
+}
+
+ul.legend {
+  padding: 2px;
+  position: absolute;
+  top: 63px;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+  background: -webkit-linear-gradient(top, #fff, #f7f7f7);
+}
+
+.pie-chart-container {
+    position: relative;
+}
+
+.legend {
+  float: left;
+}
+
+.legend > li > p {
+  float: left;
+}
+
+.chart-legend-cat {
+  font-weight: 600;
+}
+
+.legend > li > p:last-child {
+  float: right;
+  margin-left: 10px;
+}
+
+.chart-header {
+
+}
+
+.h61c9aa,
+ .ha36fa6,
+ .hd67d67,
+ .h5391ba,
+ .hdea65b,
+ .h45e6b2 {
+  float: left;
+  width: 10px;
+  height: 10px;
+  margin: 5px;
+  margin-right: 10px;
+}
+
+.h61c9aa {
+  background: #61c9aa;
+}
+
+.ha36fa6 {
+  background: #a36fa6;
+}
+
+.hd67d67 {
+  background: #d67d67;
+}
+
+.h5391ba {
+  background: #5391ba;
+}
+
+.hdea65b {
+  background: #dea65b;
+}
+
+.he66145 {
+  background: #e66145;
+}
+
+.he6b245 {
+  background: #e6b245;
+}
+
+.chart {
+  float: right;
+  margin-bottom: 20px;
+}
+
+h1.chart-header {
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}

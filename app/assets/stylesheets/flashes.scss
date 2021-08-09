@@ -1,0 +1,58 @@
+.user-form-errors {
+  border: 1px solid crimson;
+  background: #ffbaba;
+  color: #d81758;
+  width: 340px;
+  height: 60px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 3px;
+  font-size: 14px;
+}
+
+
+.user-form-errors > ul {
+  float: left;
+  margin-left: 15px;
+  display: block;
+}
+
+
+.fa-exclamation-triangle {
+  float: left;
+  padding: 0;
+  font-size: 14px;
+}
+
+.user-form-errors > ul > li {
+  padding-bottom: 5px;
+}
+
+.session-form-errors {
+  border: 1px solid crimson;
+  background: #ffbaba;
+  color: #d81758;
+  width: 300px;
+  height: 20px;
+  margin: 20px 0;
+  padding: 10px;
+  border-radius: 3px;
+  font-size: 14px;
+}
+
+.session-form-errors > span {
+  float: left;
+  margin-left: 15px;
+}
+
+.session-form-success {
+  border: 1px solid #4F8A10;
+  color: #4F8A10;
+  background-color: #DFF2BF;
+  width: 300px;
+  height: 20px;
+  margin: 20px 0;
+  padding: 10px;
+  border-radius: 3px;
+  font-size: 14px;
+}

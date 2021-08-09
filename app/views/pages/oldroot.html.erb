@@ -1,0 +1,29 @@
+<header class="root-header">
+  <nav class="root-header-nav group">
+
+    <ul class="root-header-list group">
+      <li>
+        <a href="#">Hi <%= current_user.email %></a>
+      </li>
+      <li><a href="#">Accounts</a></li>
+      <li><form action="<%= session_url %>" method="post"><input
+        type="hidden"
+        name="authenticity_token"
+        value="<%= form_authenticity_token %>">
+        <input type="hidden" name="_method" value="delete">
+        <button>Log Out</button></form></li>
+
+    </ul>
+
+  </nav>
+</header>
+
+<div id="root">
+  <h2> To give you the freshest possible info, your accounts are now updating… this will only take a moment. </h2>
+</div>
+
+<script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    init();
+  });
+</script>

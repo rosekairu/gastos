@@ -1,0 +1,218 @@
+// Place all the styles related to the users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+/* --- RESET --- */
+
+html, body, header, nav, h1, a, ul, li,
+strong, main, section, img, div, h2, p,
+form, fieldset, label, input, textarea,
+button, article, footer, small {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font: inherit;
+  box-sizing: inherit;
+  text-align: inherit;
+  text-decoration: inherit;
+  vertical-align: baseline;
+  color: inherit;
+  background: transparent;
+}
+
+/* --- ELEMENTS --- */
+
+body {
+  font-family: "AvenirNext-Regular", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  box-sizing: content-box;
+  font-size: 16px;
+  background: white;
+  color: #000;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* --- CLEARFIX --- */
+
+.group:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+/* --- HEADER --- */
+
+.header {
+  padding-top: 85px;
+}
+
+.header p {
+  display: block;
+}
+
+.header-nav {
+  margin: 0 auto;
+  width: 800px;
+}
+
+.header-logo {
+  float: left;
+  font-weight: bold;
+}
+
+.header-list {
+  float: right;
+}
+
+.header-list > li {
+  padding: 0 10px;
+  margin: 5px 0;
+  float: left;
+  border-left: 1px solid #ccc;
+  font-size: 15px;
+  color: #333;
+}
+
+.header-list-bold {
+  font-weight: bold;
+}
+
+.header-list > li:first-child {
+  border-left: none;
+}
+
+.gastos-logo {
+  width: 30%;
+  height: 30%;
+  margin-top: -10px;
+}
+
+
+/* --- CONTENT --- */
+
+.content {
+  margin: 0 auto;
+  background: #fff;
+  width: 700px;
+  height: 520px;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  padding: 43px 25px 50px 50px;
+
+}
+
+.content-sidebar {
+  float: right;
+  display: block;
+  width: 130px;
+  color: #666;
+
+  background: #eee;
+  height: 355px;
+}
+
+.content-main {
+  float: left;
+  width: 500px;
+  border-right: 1px solid #eee;
+}
+
+.content-header {
+  font-size: 36px;
+  text-align: right;
+}
+
+/* --- SIDEBAR --- */
+
+.content-sidebar {
+  padding: 21px 17px 19px 30px;
+}
+
+.sidebar-header {
+  display: block;
+  font-size: 19px;
+  width: 150px;
+  margin-left: -15px;
+}
+.sidebar-list {
+  padding-top: 10px;
+
+}
+
+.sidebar-list > li {
+  list-style-type: disc;
+  padding: 0 5px 5px 0;
+  margin-bottom: 10px;
+  font-size: 12px;
+}
+
+/* --- MAIN --- */
+.main-header {
+  width: 400px;
+  font-size: 30px;
+  font-weight: 300;
+}
+.form {
+  margin: 45px 0;
+}
+
+.form-fieldset {
+  float: left;
+  width: 400px;
+}
+
+.input {
+  margin: 0 0 20px 0;
+}
+
+.input > label {
+  font-size: 14px;
+  display: block;
+  margin-bottom: 25px;
+
+}
+
+.input > input {
+  border-radius: 3px;
+  background: #fff;
+  border: 1px solid #d8d8d8;
+  padding: 8px;
+  width: 300px;
+  color: black;
+  font-size: 14px;
+}
+
+.submit {
+  margin: 30px 0 0 0;
+}
+
+.submit > button,
+.submit > a {
+  font-size: 14px;
+  cursor: pointer;
+  font-weight: 400;
+  border-radius: 2px;
+  color: #fff;
+  padding: 10px 20px;
+  background: #45cae6;
+}
+
+.submit > a {
+  text-transform: uppercase;
+  margin-left: 20px;
+}
+
+.submit > button:hover,
+.submit > a:hover {
+  background: #42c0db;
+  color: #e9f8fb;
+}

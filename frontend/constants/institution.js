@@ -1,0 +1,3 @@
+module.exports = {
+  INSTITUTIONS_RECEIVED: "INSTITUTIONS_RECEIVED"
+};

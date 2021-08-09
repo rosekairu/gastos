@@ -1,0 +1,208 @@
+// ROOT HEADER
+.root-header {
+  background: #3c3c3c;
+  color: #ccc;
+  font-size: 14px;
+  height: 42px;
+}
+
+.root-header p {
+  cursor: pointer;
+  display: block;
+  padding: 10px 20px;
+}
+.root-header p:hover {
+  color: white;
+}
+
+.root-header form {
+  display: block;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+.root-header form:hover {
+  display: block;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.root-header form > * {
+  cursor: pointer;
+}
+
+.root-header-nav {
+  margin: 0 auto;
+  width: 1000px;
+}
+
+
+.root-header-list {
+  float: right;
+}
+
+.root-header-list > li {
+  float: left;
+}
+
+// CONTENT HEADER
+
+.content-header {
+  background: #f7f7f7;
+  color: black;
+  height: 100px;
+}
+
+.content-header a {
+  display: block;
+}
+
+.content-header-nav {
+  margin: 0 auto;
+  width: 1000px;
+
+}
+
+.content-header-logo {
+  margin-top: 30px;
+  float: left;
+}
+
+.content-header-list {
+  float: right;
+}
+.account-types-show-type {
+  cursor: pointer;
+}
+
+.content-header-list > li {
+  padding-bottom: 10px;
+  margin: 45px 15px;
+  font-weight: 500;
+  float: left;
+  font-size: 12px;
+  color: #333;
+  text-transform: uppercase;
+}
+
+.content-header-list > li.content-header-list-selected {
+  border-bottom: 3px solid #0ac775;
+  font-weight: 600;
+}
+
+// CONTENT
+.root-content {
+  width: 1000px;
+  margin: auto;
+  display: block;
+  position: relative;
+}
+
+//ROOT SIDEBAR
+.root-content-sidebar {
+  min-height: 650px;
+  float: left;
+  margin-top: 32px;
+  width: 302px;
+  border-right: 1px solid #ccc;
+}
+
+.root-content-sidebar > header > h1 {
+  float: left;
+  padding: 20px 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.account-balance-headers {
+  background: #f7f7f7;
+  font-size: 15px;
+  font-weight: normal;
+  display: block;
+  cursor: pointer;
+}
+
+.account-type-account:hover {
+  cursor:default;
+}
+
+.account-type-account > p1 {
+  float: left;
+  color: black;
+  cursor: pointer;
+  padding: 5px 0;
+}
+
+.account-type-account > p2 {
+  float: right;
+  padding-right: 40px;
+}
+.type-background > h3 {
+  float: left;
+  font-weight: normal;
+}
+.account-balance {
+  float: right;
+  font-weight: 600;
+  padding-right: 40px;
+  color: #71c775;
+}
+
+.account-balance-headers {
+
+  font-size: 15px;
+  font-weight: normal;
+  cursor: pointer;
+  display: block;
+}
+
+.account-balance-neg {
+  color: black;
+  float: right;
+  font-weight: 600;
+  padding-right: 40px;
+}
+
+.account-type-account {
+  display: block;
+  padding-left: 27px;
+  background: white;
+  font-size: 13px;
+}
+
+.type-background {
+  background: #f7f7f7;
+}
+
+i {
+  padding: 0 10px;
+}
+
+i.fa-pencil {
+  float: right;
+  color: #cdcdcd;
+  padding: 20px 40px 0 0;
+  font-size: 20px;
+}
+
+#show-pencil {
+  float: right;
+  color: #cdcdcd;
+  padding: 15px 15px 0 0;
+  font-size: 20px;
+}
+
+i.fa-pencil:hover,
+#show-pencil:hover {
+  cursor: pointer;
+  color: #aaa;
+}
+
+.root-content-main > h1 {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.get-started {
+  float: left;
+}

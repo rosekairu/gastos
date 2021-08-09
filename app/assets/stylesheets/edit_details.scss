@@ -1,0 +1,184 @@
+.edit-details {
+  height: 18px;
+  position: relative;
+  display: block;
+}
+
+.edit-details > button {
+  padding: 7px 8px 6px 5px;
+  font-size: 11px;
+  margin-top: 7px;
+  width: 71px;
+}
+
+
+
+button.edit-details-cancel,
+button.edit-account-delete {
+  float: left;
+  padding: 7px 8px 6px 5px;
+  font-size: 11px;
+  margin-top: 7px;
+  width: 71px;
+  border: 1px solid #999;
+  text-align: center;
+  border-radius: 3px;
+  margin-left: 400px;
+}
+
+button.edit-details-cancel:hover,
+button.edit-account-delete:hover {
+  color: white;
+  background: #999;
+  cursor: pointer;
+}
+
+button.edit-account-delete {
+  margin-left: 0;
+  text-transform: uppercase;
+  width: 652px;
+  cursor: pointer;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, .3);
+}
+
+button.edit-details-submit {
+  float: right;
+  padding: 7px 8px 6px 5px;
+  font-size: 11px;
+  margin-top: 7px;
+  width: 71px;
+  height: 14px;
+  text-align: center;
+  border-radius: 3px;
+  margin-right: 20px;
+  color: white;
+  background: #45cae6;
+}
+
+
+button.update-user-submit {
+  text-transform: uppercase;
+}
+
+button.edit-details-submit:hover,
+ footer > button:hover,
+ button.update-user-submit:hover,
+ button.search-button:hover {
+  cursor: pointer;
+  background: #42c0db;
+  color: #e9f8fb;
+}
+
+
+
+
+
+tr.edit-form {
+  position: relative;
+  background: #666666;
+  height: 30px;
+  color: black;
+}
+
+tr.edit-form:hover {
+  background: #666666;
+  height: 30px;
+}
+
+td > input {
+  font-size: 12px;
+  width: 100%;
+  background: white;
+  text-overflow: ellipsis;
+  margin-left: -9px;
+  padding: 4px;
+}
+
+tr.edit-form > td.description {
+  position: relative;
+  padding-right: 2px;
+  width: 400px;
+}
+
+tr.edit-form > td.category > input {
+  margin-left: -6px;
+}
+
+td.amount {
+  text-align: right;
+}
+
+tr.edit-form > td.amount,
+tr.edit-form > td.date,  {
+  font-weight: 600;
+  color: white;
+}
+
+td.edit-details {
+
+  position: relative;
+}
+
+button.edit-details {
+  background: #666666;
+  color: white;
+  display: block;
+  position: absolute;
+  left: 150px;
+  top: 35px;
+  height: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 9px;
+  padding: 2px 14px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+button.edit-details:hover {
+  background: #2e2e2e;
+}
+
+
+
+.edit-details-show {
+  position: absolute;
+  width: 607px;
+  height: 130px;
+  background: #f2f2f2;
+  left: -90px;
+  top: 35px;
+  border: 1px solid #666666;
+  padding-left: 35px;
+  padding-top: 10px;
+}
+
+h7.edit-notes {
+}
+
+h7.edit-notes > a {
+  color: #676767;
+  float: left;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 600;
+
+}
+
+h7.edit-notes > textarea {
+  resize: none;
+  float: right;
+  background: white;
+  border: 2px solid #dddddd;
+  border-radius: 5px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  font-size: 12px;
+  height: 62px;
+  width: 486px;
+  padding: 2px;
+}
+
+h7.edit-notes > textarea:hover {
+  border-color: #bbb;
+}
