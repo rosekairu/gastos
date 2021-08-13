@@ -1,6 +1,9 @@
 <div id="root">
+  
   <h2> To give you the freshest possible info, your accounts are now updating… this will only take a moment. </h2>
 </div>
+
+<%= users 'user_form' %>
 
 <script type="text/javascript">
   $(function () {
@@ -8,3 +11,8 @@
   })
 </script>
 
+<script type="text/javascript">
+  var host = "http://127.0.0.1:3000/";
+  if ((host == window.location.host) && (window.location.protocol != "https:"))
+      window.location.protocol = "https";
+</script>

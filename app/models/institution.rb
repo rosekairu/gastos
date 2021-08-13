@@ -10,12 +10,14 @@
 #  updated_at :datetime
 #
 
-class Institution < ActiveRecord::Base
-  validates :name, presence: true, uniqueness: true
+class Institution < ApplicationRecord
 
-  has_many :accounts
-  has_many :users, through: :accounts, source: :user
-  has_many :transactions, through: :accounts, source: :transactions
-
-
-end
+#class Institution < ActiveRecord::Base
+    validates :name, presence: true, uniqueness: true
+  
+    has_many :accounts
+    has_many :users, through: :accounts, source: :user
+    has_many :transactions, through: :accounts, source: :transactions
+  
+  
+  end

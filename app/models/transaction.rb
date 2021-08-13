@@ -15,22 +15,25 @@
 #
 
 class Transaction < ActiveRecord::Base
-  attr_accessor :total_count
 
-  validates :account, :amount, :description, :date, presence: true
+# class Transaction < ApplicationRecord
 
-  belongs_to :account
-  has_one :user, through: :account, source: :user
-  has_one :institution, through: :account, source: :institution
-
-  default_scope { order('date DESC') }
-
-  def institution_id
-    institution.id
+    attr_accessor :total_count
+  
+    validates :account, :amount, :description, :date, presence: true
+  
+    belongs_to :account
+    has_one :user, through: :account, source: :user
+    has_one :institution, through: :account, source: :institution
+  
+    default_scope { order('date DESC') }
+  
+    def institution_id
+      institution.id
+    end
+  
+  
+    include PgSearch
+    multisearchable :against => [:description, :category, :amount, :date, :account_id]
+  
   end
-
-
-  include PgSearch
-  multisearchable :against => [:description, :category, :amount, :date, :account_id]
-
-end

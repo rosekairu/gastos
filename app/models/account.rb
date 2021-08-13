@@ -40,6 +40,8 @@ CATEGORY_TYPES = [
 
 class Account < ActiveRecord::Base
 
+# class Account < ApplicationRecord
+
   validates :name, :institution, :user, :balance, :account_type, presence: true
   validates :account_type, inclusion: ACCOUNT_TYPES
 
@@ -71,7 +73,7 @@ class Account < ActiveRecord::Base
     amount = ((rand(10000)/100) - (50 + (rand(1..100) / 100.0))).round(2)
 
     self.transactions.create(
-      category: "Welcome to Gastos!",
+      category: "Welcome to Mintmo!",
       description: "Edit descriptions by typing in here",
       date: date,
       amount: amount,

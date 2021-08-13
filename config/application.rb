@@ -28,4 +28,4 @@ module Gastos
       }
     }
   end
-end
+end 

@@ -22,8 +22,12 @@ default: &default
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
 
 development:
-  <<: *default
+  <<: *default 
   database: gastos_development
+  username: gastos
+  password: gastos
+  host: localhost
+  port: 5432
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
@@ -58,6 +62,10 @@ development:
 test:
   <<: *default
   database: gastos_test
+  username: gastos
+  password: gastos
+  host: localhost
+  port: 5432
 
 # As with config/credentials.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -74,7 +82,7 @@ test:
 # URL environment variable explicitly:
 #
 #   production:
-#     url: <%= ENV['MY_APP_DATABASE_URL'] %>
+#     url: <%= ENV['MY_APP_DATABASE_URL'] %> <%= ENV['GASTOS_DATABASE_PASSWORD'] %>
 #
 # Read https://guides.rubyonrails.org/configuring.html#configuring-a-database
 # for a full overview on how database connection configuration can be specified.
@@ -83,4 +91,6 @@ production:
   <<: *default
   database: gastos_production
   username: gastos
-  password: <%= ENV['GASTOS_DATABASE_PASSWORD'] %>
+  password: gastos
+  host: localhost
+  port: 5432

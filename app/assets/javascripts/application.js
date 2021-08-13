@@ -12,5 +12,6 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require accountingjs 
-//= require_tree .
+//= require accountingjs
+//= require_tree
+//= require bootstrap

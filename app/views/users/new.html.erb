@@ -2,12 +2,12 @@
   <nav class="header-nav group">
 
     <h1 class="header-logo">
-      <a href="#"><img class="citrus-logo" src="<%= asset_path('citrus.png') %>" alt="" /></a>
+      <a href="/"><img class="gastos-logo" src="<%= asset_path('gastos.png') %>" alt="" /></a>
     </h1>
 
     <ul class="header-list group">
       <li>
-        <a href="<%= new_user_url %>" class="header-list-bold">Sign up</a>
+        <a href="<%= new_users_url %>" class="header-list-bold">Sign up</a>
       </li>
       <li><a href="<%= new_session_url %>">Log in</a></li>
     </ul>
@@ -24,7 +24,7 @@
       <p class="errors" ><%= flash[:errors].join("<br>").html_safe %> </p>
     <% end%>
 
-    <form class="form group" action="<%= user_url %>" method="post">
+    <form class="form group" action="<%= users_url %>" method="post">
       <input type="hidden"
         name="authenticity_token"
         id=""

@@ -8,7 +8,7 @@ var UsersStore = require('../../stores/users_store'),
 
 var UserForm = React.createClass({
   mixins: [History],
-
+ 
   getInitialState: function () {
     return {flash: FlashStore.all()};
   },
@@ -62,9 +62,9 @@ var UserForm = React.createClass({
 
             <ul className="header-list group">
               <li>
-                <a href="#/users/new" className="header-list-bold">Sign up</a>
+                <a href="/users/new" className="header-list-bold">Sign up</a>
               </li>
-              <li><a href="#/login">Log in</a></li>
+              <li><a href="/login">Log in</a></li>
             </ul>
 
           </nav>
